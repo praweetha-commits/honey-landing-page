@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honey Garden</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#fff8e8;
+}
+
+header{
+background:#f4b400;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+width:250px;
+text-align:center;
+}
+
+.card img{
+width:200px;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+form{
+max-width:500px;
+margin:auto;
+padding:20px;
+background:white;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+background:#f4b400;
+color:white;
+padding:12px;
+border:none;
+width:100%;
+cursor:pointer;
+font-size:18px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:30px;
+background:#f4b400;
+color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🍯 Honey Garden</h1>
+<p>น้ำผึ้งแท้จากธรรมชาติ 100%</p>
+</header>
+
+<section class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=400" alt="">
+<h2>น้ำผึ้งดอกลำไย 250 กรัม</h2>
+<p>ราคา 189 บาท</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?w=400" alt="">
+<h2>น้ำผึ้งดอกลำไย 500 กรัม</h2>
+<p>ราคา 329 บาท</p>
+</div>
+
+</section>
+
+<form id="orderForm">
+
+<h2>สั่งซื้อสินค้า</h2>
+
+<input type="text" placeholder="ชื่อ" required>
+
+<input type="tel" placeholder="เบอร์โทร" required>
+
+<input type="text" placeholder="ที่อยู่" required>
+
+<select required>
+
+<option>เลือกสินค้า</option>
+
+<option>น้ำผึ้ง 250 กรัม</option>
+
+<option>น้ำผึ้ง 500 กรัม</option>
+
+</select>
+
+<input type="number" placeholder="จำนวน">
+
+<button type="submit">สั่งซื้อ</button>
+
+</form>
+
+<footer>
+
+Honey Garden ©2026
+
+</footer>
+
+<script>
+
+document.getElementById("orderForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("บันทึกข้อมูลเรียบร้อย");
+
+});
+
+</script>
+
+</body>
+</html>
